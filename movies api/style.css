@@ -151,7 +151,7 @@ body{
     margin-left: 20px;
 }
 .share{
-    border: 1px solid rgb(255, 253, 253);
+   
     outline: none;
     background-color: transparent;
     font-size: 1.2rem;
@@ -422,7 +422,7 @@ body{
     .back{
         top:10px;
         left:2px;
-        position:fixed;
+        position:absolute;
         background-color: transparent;
         font-size: 2.1rem;
         color: white;
