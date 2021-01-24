@@ -1,0 +1,431 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+body{
+    
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing: antialiased;
+
+}
+#main-movies,.upcoming-movies,.recent-movies,.hollywood-movies,.telugu-movies{
+    display: flex;
+    border-bottom: 2px solid rgba(250, 246, 246, 0.246);
+}
+.container-fluid{
+    background-color: #181818;
+    color: white;
+}
+.autoslide{
+    width: 100%;
+    height: 70vh;
+    overflow: hidden;
+    box-shadow: 2px 2px 50px 3px black;
+}
+.autoslide img{
+    width: 100%;
+    height: 100%;
+   
+}
+#inputbtn{
+    width: 400px;
+    margin-top: 20px;
+    padding:5px 20px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    outline: none;
+   border: none;
+}
+#searchbtn{
+    border-radius: 10px;
+    background-color:#e50914;;
+    outline: none;
+    border: none;
+    padding:3px 20px ;
+    text-transform: capitalize;
+    font-size: 1.2rem;
+}
+.head{
+    text-align: left;
+    width: 600px;
+    margin-left: 30px;
+}
+.movie{
+    font-size: 3rem;
+    font-family: serif;
+    font-weight: bold;
+}
+.title{
+    text-transform: capitalize;
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+}
+.tamil-movies,.hollywoood-movies,.hindi-movies,.romantic-movies{
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+     font-family: 'PT Sans', sans-serif;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+.movie-image{
+    width: 150px;
+    height: 200px;
+    overflow: hidden;
+    box-shadow: 2px 2px 50px 3px black;
+}
+.meal-item{
+    padding-left: 10px;
+}
+.movie-image img{
+    width: 100%;
+    height: 100%;
+}
+.movie-title{
+    margin-top: 5px;
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 500;
+    font-family: 'PT Sans', sans-serif;
+}
+#movies-videos{
+     position: fixed;
+    top: 0%;
+   
+    background-color: aqua;
+    width: 100%;
+    height: 800px;
+    overflow: hidden;
+    visibility: hidden;
+    
+}
+.show{
+    visibility: visible;
+}
+#movie-videos-details{
+    overflow-y: scroll;
+    height: 80%;
+    padding: 30px;
+    position: relative;
+    background:linear-gradient(160deg,rgba(0, 0, 0, 0.472),rgba(202, 201, 201, 0.301));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0px 50px  50px rgb(226, 216, 216);
+}
+.addressing-titles{
+    margin-top:10px;
+    background-color: rgba(20, 20, 20, 0.534);
+    padding: 20px;
+}
+#movie-videos-details::-webkit-scrollbar{
+    width: 5px;
+    background-color: black;
+   
+}
+#movie-videos-details::-webkit-scrollbar-thumb{
+    background-color: white;
+}
+.video-close{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    position: fixed;
+    top: 50px;
+    right: 20px;
+    color: rgb(255, 74, 74);
+    font-size: 2rem;
+}
+.video-image{
+    width:270px;
+    height: 300px;
+   border-radius: 5%;
+    padding: 10px;
+    margin-left: 50px;
+}
+.video-image img{
+    width: 100%;
+    height: 100%;
+}
+.buttons{
+    align-items: center;
+    text-align: center;
+}
+.buttons button{
+    margin-left: 20px;
+}
+.share{
+    border: 1px solid rgb(255, 253, 253);
+    outline: none;
+    background-color: transparent;
+    font-size: 1.2rem;
+    border-radius: 100%;
+   color: white;
+}
+.video-close:focus,.back:focus,.share:focus,#searchbtn:active{
+    outline: none;
+    border: none;
+} 
+.video-title{
+    text-transform: capitalize;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    font-size: 2.3rem;
+    color: white;
+}
+.video-over-title{
+    font-size:1rem;
+    opacity: 0.8;
+    color: white;
+    text-decoration: underline 2px solid black;
+}
+.video-overview-text{
+    font-weight: 300;
+    color: white;
+}
+.video-release,.video-vote{
+    font-size: 1.1rem;
+    font-weight:400;
+    color: white;
+}
+.vote-number, .vote{
+    color: rgb(255, 255, 255);
+}
+.vote{
+    background-color: white;
+    padding: 5px 10px;
+    margin-left: 5px;
+    color: rgb(55, 226, 40);
+    font-weight: 500;
+}
+.fa-star{
+    color: rgb(231, 196, 40);
+}
+.colr{
+    background-color:rgb(22, 21, 21);
+    color: rgb(22, 21, 21);
+    
+}
+.back{
+    top:10px;
+    position: absolute;
+    background-color: transparent;
+    font-size: 2.1rem;
+    color: white;
+   border: none;
+   outline: none;
+}
+::-webkit-scrollbar-track{
+    width: 5px;
+    background-color: transparent;
+}
+::-webkit-scrollbar-thumb{
+    background-color: gray;
+    border-radius: 30px;
+}
+::-webkit-scrollbar{
+    width: 8px;
+}
+@media only screen and (max-width: 480px) {
+    
+   
+    .autoslide{
+        width: 100%;
+        height: 30vh;
+        overflow: hidden;
+        box-shadow: 2px 2px 50px 3px black;
+    }
+    .autoslide img{
+        width: 100%;
+        height: 100%;
+       
+    }
+    #inputbtn{
+        width: 200px;
+        margin-top: 2px;
+        padding:2px 9px;
+        border-radius: 10px;
+        font-size: 0.8rem;
+        outline: none;
+       border: none;
+    }
+    #searchbtn{
+        border-radius: 7px;
+        background-color:#e50914;;
+        outline: none;
+        border: none;
+        padding:4px 10px ;
+        text-transform: capitalize;
+        font-size: 0.7rem;
+    }
+    .head{
+        text-align: left;
+        width: 100%;
+        margin-left: 5px;
+        margin-top: 9px;
+    }
+    .movie{
+        font-size: 1.4rem;
+        font-family: serif;
+        font-weight: bold;
+    }
+    .title{
+        text-transform: capitalize;
+        font-size: 0.8rem;
+        line-height: 1.3rem;
+    }
+    .tamil-movies,.hollywoood-movies,.hindi-movies,.romantic-movies{
+        font-size: 0.9rem;
+        font-weight: 600;
+        letter-spacing: 0rem;
+         font-family: 'PT Sans', sans-serif;
+        margin-left: 10px;
+        margin-top: 30px;
+    }
+    .movie-image{
+        width: 90px;
+        height: 100px;
+        overflow: hidden;
+        box-shadow: 2px 2px 50px 3px black;
+    }
+    .meal-item{
+        padding-left: 7px;
+    }
+    .movie-image img{
+        width: 100%;
+        height: 100%;
+    }
+    .movie-title{
+        margin-top: 5px;
+        font-size: 0.7rem;
+        text-align: center;
+        font-weight: 500;
+        font-family: 'PT Sans', sans-serif;
+    }
+    #movies-videos{
+         position: fixed;
+        top: 0%;
+       
+        background-color: aqua;
+        width: 100%;
+        height:100%;
+        overflow: hidden;
+        visibility: hidden;
+        
+    }
+    .show{
+        visibility: visible;
+    }
+    #movie-videos-details{
+        overflow-y: scroll;
+        height: 97%;
+        padding: 10px;
+        position: relative;
+        background:linear-gradient(160deg,rgba(0, 0, 0, 0.472),rgba(202, 201, 201, 0.301));
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+      box-shadow: 0px 50px  50px rgb(226, 216, 216);
+    }
+    .addressing-titles{
+        margin-top:10px;
+        background-color: rgba(20, 20, 20, 0.534);
+        padding: 10px;
+    }
+    #movie-videos-details::-webkit-scrollbar{
+        width: 5px;
+        background-color: black;
+       
+    }
+    #movie-videos-details::-webkit-scrollbar-thumb{
+        background-color: white;
+    }
+    .video-close{
+        border: none;
+        outline: none;
+        background-color: transparent;
+        position: fixed;
+        top: 10px;
+        right: 20px;
+        color: rgb(255, 74, 74);
+        font-size: 1.4rem;
+    }
+    .video-image{
+        width:180px;
+        height:180px;
+       border-radius: 5%;
+        padding: 10px;
+        margin-left: 20%;
+    }
+    .video-image img{
+        width: 100%;
+        height: 100%;
+    }
+    .buttons{
+       
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .buttons button{
+        margin:7px;
+       font-size: 0.7rem;
+    }
+    .share{
+        border: 1px solid rgb(255, 253, 253);
+        outline: none;
+        background-color: transparent;
+        font-size: 1rem;
+        border-radius: 100%;
+       color: white;
+    }
+    .video-close:focus,.back:focus,.share:focus,#searchbtn:active{
+        outline: none;
+       
+    } 
+    .video-title{
+        text-transform: capitalize;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: 600;
+        font-size: 2rem;
+        color: white;
+    }
+    .video-over-title{
+        font-size:1rem;
+        opacity: 0.8;
+        color: white;
+        text-decoration: underline 2px solid black;
+    }
+    .video-overview-text{
+        font-weight: 300;
+        color: white;
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+    .video-release,.video-vote{
+        font-size: 1rem;
+        font-weight:400;
+        color: white;
+    }
+    .vote-number, .vote{
+        color: rgb(255, 255, 255);
+    }
+    .vote{
+        background-color: white;
+        padding: 5px 10px;
+        margin-left: 5px;
+        color: rgb(55, 226, 40);
+        font-weight: 400;
+    }
+    .fa-star{
+        color: rgb(231, 196, 40);
+    }
+    .colr{
+        background-color:rgb(22, 21, 21);
+        color: rgb(22, 21, 21);
+        
+    }
+    .back{
+        top:10px;
+        position: absolute;
+        background-color: transparent;
+        font-size: 2.1rem;
+        color: white;
+       border: none;
+       outline: none;
+    }
+  }
