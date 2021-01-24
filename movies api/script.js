@@ -521,7 +521,7 @@ draggable:true,
 ////autoslide imges for top slider
 
 var i=0;
-var image=['https://www.movienewsletters.net/media/slider/1200x444/299932.jpg','https://www.movienewsletters.net/media/slider/1200x444/311592.jpg','https://www.movienewsletters.net/media/slider/1200x444/314959.jpg','11.jpg'];
+var image=['https://www.movienewsletters.net/media/slider/1200x444/299932.jpg','https://www.movienewsletters.net/media/slider/1200x444/311592.jpg','https://www.movienewsletters.net/media/slider/1200x444/314959.jpg','https://wallpapercave.com/wp/jCDL6OV.jpg'];
 var time=3000;
 
 function autoslide(){
