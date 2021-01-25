@@ -6,7 +6,7 @@ body{
      background-color: #181818;
 
 }
-#main-movies,.upcoming-movies,.recent-movies,.hollywood-movies,.telugu-movie,.india-movie,.cartoon-movie{
+#main-movies,.upcoming-movies,.recent-movies,.hollywood-movies,.telugu-movie,.india-movies,.cartoon-movies{
     display: flex;
     border-bottom: 2px solid rgba(250, 246, 246, 0.246);
 }
