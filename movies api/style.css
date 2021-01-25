@@ -3,6 +3,7 @@ body{
     
     font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
     -webkit-font-smoothing: antialiased;
+     background-color: #181818;
 
 }
 #main-movies,.upcoming-movies,.recent-movies,.hollywood-movies,.telugu-movies{
