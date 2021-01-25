@@ -430,4 +430,14 @@ body{
        border: none;
        outline: none;
     }
+    ::-webkit-scrollbar-track{
+    width: 1px;
+    background-color: transparent;
+}
+::-webkit-scrollbar-thumb{
+    background-color: gray;
+    border-radius: 30px;
+}
+::-webkit-scrollbar{
+    width: 1px;
   }
